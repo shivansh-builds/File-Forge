@@ -1,0 +1,473 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #eff6ff
+    );
+
+    color: #0f172a;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+
+    background: white;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+/* Logo */
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* Menu */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li {
+    cursor: pointer;
+    color: #475569;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+nav ul li:hover {
+    color: #2563eb;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Hero Heading */
+
+.hero h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+
+    max-width: 1000px;
+
+    margin-bottom: 30px;
+}
+
+/* Hero Paragraph */
+
+.hero p {
+    font-size: 1.3rem;
+
+    color: #64748b;
+
+    max-width: 700px;
+
+    margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 18px 42px;
+
+    border-radius: 15px;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 25px rgba(37,99,235,.25);
+}
+
+button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-5px);
+}
+
+/* =========================
+   TOOLS SECTION
+========================= */
+
+.tools {
+    padding: 80px 8%;
+}
+
+.tools h2 {
+    text-align: center;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 60px;
+}
+
+/* Grid */
+
+.tool-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.card h3 {
+
+    margin-bottom: 20px;
+
+    color: #0f172a;
+
+    font-size: 1.4rem;
+}
+
+.card p {
+
+    color: #64748b;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+}/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top: 100px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: white;
+
+    color: #64748b;
+
+    box-shadow: 0 -2px 15px rgba(0,0,0,.05);
+}
+/* =========================
+   CONVERTER SECTION
+========================= */
+
+.converter {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.converter h1 {
+
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+}
+
+.converter p {
+
+    color: #64748b;
+
+    margin-bottom: 40px;
+}
+
+/* Upload Box */
+
+.upload-box {
+
+    background: white;
+
+    width: 700px;
+
+    max-width: 90%;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.upload-box h2 {
+
+    margin-bottom: 20px;
+}
+
+.upload-box input {
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+}
+/* =========================
+   CONVERTER SECTION
+========================= */
+
+.converter {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.converter h1 {
+
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+}
+
+.converter p {
+
+    color: #64748b;
+
+    margin-bottom: 40px;
+}
+
+/* Upload Box */
+
+.upload-box {
+
+    background: white;
+
+    width: 700px;
+
+    max-width: 90%;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.upload-box h2 {
+
+    margin-bottom: 20px;
+}
+
+.upload-box input {
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+}
+css
+/* =========================
+   UPLOAD BOX
+========================= */
+
+.upload-box {
+
+    background: white;
+
+    width: 700px;
+
+    max-width: 90%;
+
+    padding: 60px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+
+    margin-top: 40px;
+}
+
+
+/* Form */
+
+.upload-box form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* Upload Icon */
+
+.upload-icon {
+
+    font-size: 5rem;
+}
+
+
+/* File Input */
+
+input[type="file"] {
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: 2px dashed #2563eb;
+
+    border-radius: 15px;
+
+    background: #f8fafc;
+}
+
+
+/* Upload Button */
+
+.upload-box button {
+
+    width: 250px;
+}
+
+```css
+/* Links */
+
+a{
+    text-decoration:none;
+}
+
+
+/* Logo Link */
+
+.logo a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+}
+
+
+/* Card Links */
+
+.card{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+```
