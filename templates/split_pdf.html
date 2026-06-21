@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split PDF | FileForge</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+
+    <div class="logo">
+        <a href="/">FileForge</a>
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li>Tools</li>
+        <li>About</li>
+    </ul>
+
+</nav>
+
+
+<section class="converter">
+
+    <h1>
+        Split PDF
+    </h1>
+
+    <p>
+        Split a PDF into individual pages.
+    </p>
+
+    <div class="upload-box">
+
+        <form method="POST"
+              enctype="multipart/form-data">
+
+            <div class="upload-icon">
+
+                ✂️
+
+            </div>
+
+            <h2>
+
+                Choose PDF File
+
+            </h2>
+
+            <p>
+
+                Upload a PDF to split it into separate pages.
+
+            </p>
+
+            <input
+                type="file"
+                name="pdf_file"
+                accept=".pdf"
+                required>
+
+            <button type="submit">
+
+                Split PDF
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to PDF | FileForge</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <a href="/">FileForge</a>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="/">Home</a>
+            </li>
+
+            <li>Tools</li>
+
+            <li>About</li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Converter Section -->
+
+    <section class="converter">
+
+        <h1>
+            Word to PDF Converter
+        </h1>
+
+        <p>
+            Upload your Word document and convert it into a PDF.
+        </p>
+
+        <div class="upload-box">
+
+            <form method="POST"
+                  enctype="multipart/form-data">
+
+                <div class="upload-icon">
+                    📝
+                </div>
+
+                <h2>
+                    Choose DOCX File
+                </h2>
+
+                <p>
+                    Select a Word document to convert into PDF.
+                </p>
+
+                <input
+                    type="file"
+                    name="word_file"
+                    accept=".docx"
+                    required>
+
+                <button type="submit">
+                    Convert to PDF
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

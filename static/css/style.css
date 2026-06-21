@@ -470,4 +470,46 @@ a{
 
     color:inherit;
 }
-```
+
+/* ==========================
+   LINK STYLES
+========================== */
+
+a{
+    text-decoration:none;
+}
+
+
+/* Logo Link */
+
+.logo a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+}
+
+
+/* Navigation Links */
+
+nav ul li a{
+
+    color:#475569;
+
+    transition:.3s;
+}
+
+nav ul li a:hover{
+
+    color:#2563eb;
+}
+
+
+/* Tool Cards */
+
+.card{
+
+    text-decoration:none;
+
+    color:inherit;
+}
