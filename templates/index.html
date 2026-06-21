@@ -1,72 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FileForge | Shivansh-Builds</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        FileForge | Shivansh-Builds
+    </title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 <body>
 
-    <!-- Navbar -->
 
-    <nav>
+<!-- Navbar -->
 
-        <div class="logo">
-            <a href="/">FileForge</a>
-        </div>
+<nav>
 
-        <ul>
+    <div class="logo">
+        FileForge
+    </div>
 
-            <li>
-                <a href="/">Home</a>
-            </li>
+    <ul>
 
-            <li>Tools</li>
+        <li>
+            <a href="/">
+                Home
+            </a>
+        </li>
 
-            <li>About</li>
+        <li>
+            <a href="#tools">
+                Tools
+            </a>
+        </li>
 
-        </ul>
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
 
-    </nav>
+    </ul>
+
+</nav>
 
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
 
-    <section class="hero">
+<section class="hero">
 
-        <h1>
-            Convert, Manage and Transform Your Files
-        </h1>
+    <h1>
 
-        <p>
-            Fast, secure and easy document tools built by Shivansh-Builds.
-        </p>
+        Convert, Manage and Transform Your Files
+
+    </h1>
+
+    <p>
+
+        Fast, secure and easy document tools built by Shivansh-Builds.
+
+    </p>
+
+
+    <a href="#tools">
 
         <button>
+
             Explore Tools
+
         </button>
 
-    </section>
+    </a>
+
+</section>
 
 
-    <!-- Tools Section -->
 
-    <section class="tools">
+<!-- Tools Section -->
 
-        <h2>
-            Popular Tools
-        </h2>
+<section class="tools"
+         id="tools">
 
-        <div class="tool-grid">
+    <h2>
+
+        Popular Tools
+
+    </h2>
 
 
-            <!-- PDF to Word -->
+    <div class="tool-grid">
 
-            <a href="/pdf-to-word" class="card">
+
+        <a href="/pdf-to-word">
+
+            <div class="card">
 
                 <h3>
                     📄 PDF to Word
@@ -76,12 +108,15 @@
                     Convert PDF files into editable Word documents.
                 </p>
 
-            </a>
+            </div>
+
+        </a>
 
 
-            <!-- Word to PDF -->
 
-            <a href="/word-to-pdf" class="card">
+        <a href="/word-to-pdf">
+
+            <div class="card">
 
                 <h3>
                     📝 Word to PDF
@@ -91,12 +126,15 @@
                     Transform Word documents into PDF files.
                 </p>
 
-            </a>
+            </div>
+
+        </a>
 
 
-            <!-- Merge PDF -->
 
-            <a href="/merge-pdf" class="card">
+        <a href="/merge-pdf">
+
+            <div class="card">
 
                 <h3>
                     📚 Merge PDF
@@ -106,12 +144,15 @@
                     Combine multiple PDF files into one document.
                 </p>
 
-            </a>
+            </div>
+
+        </a>
 
 
-            <!-- Split PDF -->
 
-            <a href="/split-pdf" class="card">
+        <a href="/split-pdf">
+
+            <div class="card">
 
                 <h3>
                     ✂️ Split PDF
@@ -121,22 +162,90 @@
                     Split PDF files into multiple documents.
                 </p>
 
-            </a>
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- About Section -->
+
+<section class="about"
+         id="about">
+
+
+    <h2>
+
+        About FileForge
+
+    </h2>
+
+
+    <p>
+
+        FileForge is a modern document management platform
+        developed by Shivansh-Builds.
+
+        It offers fast, secure and easy-to-use tools
+        for converting and managing files online.
+
+    </p>
+
+
+
+    <div class="about-features">
+
+        <div class="feature">
+
+            ⚡ Fast Processing
 
         </div>
 
-    </section>
+
+        <div class="feature">
+
+            🔒 Secure Files
+
+        </div>
 
 
-    <!-- Footer -->
+        <div class="feature">
 
-    <footer>
+            📄 Multiple Tools
 
-        <p>
-            © 2026 FileForge • Built by Shivansh-Builds
-        </p>
+        </div>
 
-    </footer>
+
+        <div class="feature">
+
+            🌐 Cloud Accessible
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+
+        © 2026 FileForge • Built by Shivansh-Builds
+
+    </p>
+
+</footer>
+
 
 </body>
 </html>
