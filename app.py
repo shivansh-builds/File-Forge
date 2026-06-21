@@ -10,12 +10,9 @@ from converters.split_pdf import split_pdf
 app = Flask(__name__)
 
 
-# ==========================================
-# Home Page
-# ==========================================
-# Create folders automatically
 os.makedirs("uploads", exist_ok=True)
 os.makedirs("outputs", exist_ok=True)
+
 @app.route("/")
 def home():
     return render_template("index.html")
