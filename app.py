@@ -152,6 +152,7 @@ def merge_pdf():
 # Split PDF
 # ==========================================
 
+
 @app.route("/split-pdf", methods=["GET", "POST"])
 def split_pdf_route():
 
@@ -166,17 +167,19 @@ def split_pdf_route():
 
         uploaded_file.save(input_path)
 
-        split_pdf(
+        output_files = split_pdf(
             input_path,
             "outputs"
         )
 
-        return "PDF split successfully. Check the outputs folder."
+        return send_file(
+            output_files[0],
+            as_attachment=True
+        )
 
     return render_template(
         "split_pdf.html"
     )
-
 
 # ==========================================
 # Run Application
